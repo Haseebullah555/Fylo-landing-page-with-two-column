@@ -1,0 +1,110 @@
+:root {
+  --very-Dark-Blue: hsl(243, 87%, 12%);
+  --desaturated-Blue: hsl(238, 22%, 44%);
+  --bright-Blue: hsl(224, 93%, 58%);
+  --moderate-Cyan: hsl(170, 45%, 43%);
+  --light-Grayish-Blue: hsl(240, 75%, 98%);
+  --light-Gray: hsl(0, 0%, 75%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* body font-family: 'Open Sans', sans-serif  */
+/* Headings, Call-to-actions, Header Navigation 
+    font-family: 'Raleway', sans-serif; */
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+/* #container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("images/bg-curve-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 30px;
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+#header a {
+  width: 80px;
+}
+#header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 80px;
+  gap: 30px;
+}
+#hero h1 {
+  font-weight: bolder;
+}
+#hero input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+}
+#email {
+  padding: 10px 150px 10px 10px;
+  border: 2px solid var(--light-Gray);
+}
+
+#email::placeholder {
+  color: var(--light-Gray);
+}
+#submit {
+  border: none;
+  background-color: var(--bright-Blue);
+  margin-top: 15px;
+  color: var(--light-Grayish-Blue);
+}
+.imgg {
+  width: 100%;
+  margin-bottom: -90px;
+}
+#productive {
+  margin-top: 80px;
+  background-color: rgb(249, 248, 254);
+  padding-top: 50px;
+  padding: 30px;
+}
+#productive img {
+  margin-bottom: 50px;
+}
+#productive h3 {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  
+}

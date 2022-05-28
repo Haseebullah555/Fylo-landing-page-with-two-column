@@ -6,6 +6,17 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <!-- google fonts-- body font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- google fonts -- headings and navigation fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+
+
   
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
@@ -17,59 +28,60 @@
 </head>
 <body>
 
-<main id="container">
-<div id="header">
-    <a href="#"><img src="images/logo.svg" alt="fylo-logo"></a>
-    <ul>
-      <li><a href="#">Features</a></li>
-      <li><a href="#">Team</a></li>
-      <li><a href="#">Sign In</a></li>
-    </ul>
-</div>
-    
-    
-    
-    
-<div id="hero">
+<section>
+  <main id="container">
+    <div id="header">
+      <a href="#"><img src="images/logo.svg" alt="fylo-logo"></a>
+      <ul>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Sign In</a></li>
+      </ul>
+    </div>
+
+    <div id="hero">
       <img src="images/illustration-1.svg" alt="">
       <h1>All your files in one secure location, accessible anywhere.</h1>
       <p>Fylo stores your most important files in one secure location.
         Access them wherever you need, share and collaborate with friends,
         family, and co-workers.</p>
-        <form action="">
-          <input type="text" placeholder="Enter your email">
-          <input type="submit" value="Get Started">
-        </form>
-</div>
-    
-<div id="productive">
-  <img src="images/illustration-2.svg" alt="">
-  <h3>Stay productive, wherever you are</h3>    
-  <p>Never let location be an issue when accessing your files. Fylo has you
-      covered for all of your file storage needs.</p>
-      
-  <p>Securely share files and folders with friends, family and colleagues for
-      live collaboration. No email attachments required!</p>
-      
-  <div>
-    <a href="#">See how Fylo works</a>
-    <img src="images/icon-arrow.svg" alt="arrow icon">
-  </div>
-      
-  <div id="card">
-    <img src="images/icon-quotes.svg" alt="quotes-icon">
-    <p>Fylo has improved our team productivity by an order of magnitude. Since
-      making the switch our team has become a well-oiled collaboration machine.</p>
-    <img src="images/avatar-testimonial.jpg" alt="avator">
-    <strong>Kyle Burton</strong>
-    <span>Founder & CEO, Huddle</span>
-  </div>
-</div>
-    
+      <form action="">
+        <input type="text" id="email" placeholder="Enter your email">
+        <input type="submit" id="submit" value="Get Started">
+      </form>
+    </div>
+    <div class="imgg">
+      <img src="images/bg-curve-desktop.svg" alt="">
+    </div>
+  
+    <div id="productive">
+      <img src="images/illustration-2.svg" alt="">
+      <h3>Stay productive, wherever you are</h3>
+      <p>Never let location be an issue when accessing your files. Fylo has you
+        covered for all of your file storage needs.</p>
+  
+      <p>Securely share files and folders with friends, family and colleagues for
+        live collaboration. No email attachments required!</p>
+  
+      <div>
+        <a href="#">See how Fylo works</a>
+        <img src="images/icon-arrow.svg" alt="arrow icon">
+      </div>
+  
+      <div id="card">
+        <img src="images/icon-quotes.svg" alt="quotes-icon">
+        <p>Fylo has improved our team productivity by an order of magnitude. Since
+          making the switch our team has become a well-oiled collaboration machine.</p>
+        <img src="images/avatar-testimonial.jpg" alt="avator">
+        <strong>Kyle Burton</strong>
+        <span>Founder & CEO, Huddle</span>
+      </div>
+    </div>
+  
     <div id="early-access">
       <h2>Get early access today</h2>
       <p>It only takes a minute to sign up and our free starter tier is extremely generous.
-      If you have any questions, our support team would be happy to help you.</p>
+        If you have any questions, our support team would be happy to help you.</p>
       <form action="">
         <input type="text" placeholder="example@fylo.com">
         <input type="submit" value="Get Started For Free">
@@ -86,7 +98,8 @@
         </div>
         <div id="email">
           <img src="images/icon-email.svg" alt="">
-          <span>example@fylo.com</span></div>
+          <span>example@fylo.com</span>
+        </div>
       </div>
       <div id="tabs">
         <ul>
@@ -96,7 +109,7 @@
           <li><a href="#">Blog</a></li>
         </ul>
       </div>
-
+  
       <div id="social">
         <div id="links">
           <ul>
@@ -112,7 +125,8 @@
         </div>
       </div>
     </div>
-</main>
+  </main>
+</section>
 
   <footer>
     <p class="attribution">
