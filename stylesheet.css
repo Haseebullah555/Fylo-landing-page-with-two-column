@@ -1,3 +1,4 @@
+/* Global styling */
 :root {
   --very-Dark-Blue: hsl(243, 87%, 12%);
   --desaturated-Blue: hsl(238, 22%, 44%);
@@ -17,12 +18,6 @@
 html {
   font-family: "Open Sans", sans-serif;
 }
-/* #container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-} */
 li {
   list-style: none;
 }
@@ -36,12 +31,10 @@ body{
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 section {
   min-height: 100vh;
   width: 100%;
-  max-width: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -52,6 +45,7 @@ section {
   /* padding: 10px; */
   gap: 30px;
 }
+/* Header section styling */
 #header {
   display: flex;
   justify-content: space-between;
@@ -71,6 +65,7 @@ section {
   justify-content: center;
   gap: 10px;
 }
+/* Hero section styling */
 #hero {
   display: flex;
   flex-direction: column;
@@ -83,21 +78,25 @@ section {
 }
 #hero h1 {
   font-weight: bolder;
+  margin-bottom: 20px;
+}
+#hero p{
+  margin-bottom: 20px;
 }
 #hero input {
   width: 100%;
   height: 40px;
   border-radius: 5px;
 }
-.email {
+.hero-email, .email {
   padding: 10px 0px 10px 10px;
   border: 2px solid var(--light-Gray);
 }
 
-.email::placeholder {
+.hero-email::placeholder, .email::placeholder {
   color: var(--light-Gray);
 }
-.submit {
+.hero-submit, .submit {
   border: none;
   background-color: var(--bright-Blue);
   margin-top: 15px;
@@ -160,18 +159,19 @@ section {
 }
 #card {
   background-color: white;
-  padding: 30px;
+  padding: 20px;
   width: 90%;
   line-height: 1.5rem;
   color: var(--desaturated-Blue);
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px 1px lightgray;
 }
 #card .qoute{
-    width: 30px;
+  width: 30px;
   height: 30px;
-  margin-bottom: 20px;
 }
 #card .avator{
-    width: 40px;
+  width: 40px;
   height: 40px;
   border-radius: 50%;
 
@@ -191,7 +191,7 @@ section {
   text-align: center;
   color: white;
 }
-#early-access h3{
+#early-access h1{
   font-family: 'Open Sans', sans-serif;
   margin-bottom: 20px;
 }
@@ -272,38 +272,151 @@ section {
   color: aliceblue;
 
 }
-@media screen and (min-width:786px) {
+@media screen and (min-width:800px) {
   section {
   max-width: 1550px;
+}
+#header{
+  padding: 20px 100px;
 }
 #hero {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
   justify-content: center;
-  
   margin-bottom: 80px;
   gap: 50px;
-  padding: 30px;
+  padding: 100px;
   text-align: left;
 }
 #hero h1 {
   font-family: 'Raleway', sans-serif;
+  margin-bottom: 20px;
+  padding-right: 200px;
+  font-weight: 700;
 }
-#hero input {
-  width: 50%;
-  height: 40px;
-  border-radius: 5px;
+#hero p{
+  margin-bottom: 40px;
+  padding-right: 100px;
 }
-.email {
-  padding: 10px 0px 10px 10px;
+.hero-email {
+  padding: 10px 150px 10px 10px;
   border: 2px solid var(--light-Gray);
+  height: 40px;
 }
-.submit {
-  border: none;
-  background-color: var(--bright-Blue);
-  margin-top: 15px;
+.hero-submit {
+  margin-top: 0px;
+  padding: 10px 50px;
   color: var(--light-Grayish-Blue);
+  height: 40px;
 }
+#form{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+}
+#productive {
+  padding: 100px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 20px;
+  line-height: 1.5rem;
+}
+#productive .img-1 {
+  width: 100%;
+  margin-bottom: 80px;
+}
+#productive h4 {
+  text-align: left;
+  font-size: 24px;
+}
+#productive p {
+  color: var(--desaturated-Blue);
+  padding-right: 80px;
+  text-align: justify;
+}
+.see-how-fylo-work {
+  align-items: flex-start;
+}
+.border {
+  width: 28%;
+  height: 2px;
+}
+#card {
+  width: 65%;
+}
+#card p{
+  padding: 0px;
+  text-align: left;
+}
+#early-access{
+  padding:100px;
+  text-align: left;
+  display: flex;
+  align-items: center ;
+  justify-content: space-between;
+}
+#early-access .discription{
+  width: 40%;
+  
+}
+#early-access .form{
+  width: 40%;
+}
+#early-access p{
+  padding-right: 50px;
+}
+#early-access .email{
+  width: 100%;
+  height: 50px;
+}
+#early-access .submit{
+  width: 40%;
+  height: 50px;
+}
+#footer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 100px;
+}
+#footer-logo img{
+  width: 50%;
+  margin-bottom: 30px;
+  /* color: white; */
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0px;
+  margin-bottom: 0px;
+}
+#contact img{
+  width: 20px;
+  height: 20px;
+}
+#fylo-phone, #fylo-email{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: lighter;
+}
+#footer-logo .log{
+  width: 100%;
+  color: aliceblue;
+  
+}
+#social{
+  margin-top: 0px;
+}
+#apps {
+  margin-top: 0px;
+}
+#apps a{
+  color: aliceblue;
 
+}
 }

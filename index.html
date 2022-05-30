@@ -46,9 +46,9 @@
         <p>Fylo stores your most important files in one secure location.
           Access them wherever you need, share and collaborate with friends,
           family, and co-workers.</p>
-        <form action="">
-          <input type="text" class="email" placeholder="Enter your email">
-          <input type="submit" class="submit" value="Get Started">
+        <form action="" id="form">
+         <div><input type="text" class="hero-email" placeholder="Enter your email"></div>
+          <div><input type="submit" class="hero-submit" value="Get Started"></div>
         </form>
     </div>
     </div>
@@ -57,71 +57,83 @@
     </div>
   
     <div id="productive">
-      <img src="images/illustration-2.svg" alt="image-1" class="img-1">
-      <h4>Stay productive, wherever you are</h4>
-      <div><p>Never let location be an issue when accessing your files. Fylo has you
-        covered for all of your file storage needs.</p></div><br>
-      <div><p>Securely share files and folders with friends, family and colleagues for
-        live collaboration. No email attachments required!</p></div>
-  
-      <div class="see-how-fylo-work">
-        <div class="link">
-          <a href="#">See how Fylo works</a>
-        <img src="images/icon-arrow.svg" alt="arrow icon">
+      <div id="photo">
+        <img src="images/illustration-2.svg" alt="image-1" class="img-1">
       </div>
-      <div class="border"></div>
-        
-      </div>
-  
-      <div id="card">
+      <div class="discription">
+        <h4>Stay productive, wherever you are</h4>
         <div>
-          <img src="images/icon-quotes.svg" alt="quotes-icon" class="qoute">
-          <p>Fylo has improved our team productivity by an order of magnitude. Since
-            making the switch our team has become a well-oiled collaboration machine.</p>
+          <p>Never let location be an issue when accessing your files. Fylo has you
+            covered for all of your file storage needs.</p>
+        </div><br>
+        <div>
+          <p>Securely share files and folders with friends, family and colleagues for
+            live collaboration. No email attachments required!</p>
         </div>
-        <div id="avator">
-          <img src="images/avatar-testimonial.jpg" alt="avator" class="avator">
-          <div class="avator-name">
-            <strong>Kyle Burton</strong><br>
-            <span>Founder & CEO, Huddle</span>
+        <div class="see-how-fylo-work">
+          <div class="link">
+            <a href="#">See how Fylo works</a>
+          <img src="images/icon-arrow.svg" alt="arrow icon">
+        </div>
+        <div class="border"></div>
+        </div>
+        <div id="card">
+          <div>
+            <img src="images/icon-quotes.svg" alt="quotes-icon" class="qoute">
+            <p>Fylo has improved our team productivity by an order of magnitude. Since
+              making the switch our team has become a well-oiled collaboration machine.</p>
+          </div>
+          <div id="avator">
+            <img src="images/avatar-testimonial.jpg" alt="avator" class="avator">
+            <div class="avator-name">
+              <strong>Kyle Burton</strong><br>
+              <span>Founder & CEO, Huddle</span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      </div>
+  
   
     <div id="early-access">
-      <h3>Get early access today</h3>
+      <div class="discription">
+        <h1>Get early access today</h1>
       <p>It only takes a minute to sign up and our free starter tier is extremely generous.
         If you have any questions, our support team would be happy to help you.</p>
-      <form action="">
-        <input type="text" placeholder="example@fylo.com" class="email">
-        <input type="submit" value="Get Started For Free" class="submit">
-      </form>
+      </div>
+     <div class="form">
+        <form action="">
+          <input type="text" placeholder="example@fylo.com" class="email">
+          <input type="submit" value="Get Started For Free" class="submit">
+        </form>
+     </div>
     </div>
     <div id="footer">
       <div id="footer-logo">
-        <i src="images/logo.svg" alt="fylo-logo"></i>
+        <img src="images/logo.svg" alt="fylo-logo" class="log">
       </div>
-      <div id="contact">
-        <div id="fylo-phone">
-          <img src="images/icon-phone.svg" alt="phone icon">
-          <div>Phone: +1-543-123-4567</div>
+        <div>
+          <div id="contact">
+            <div id="fylo-phone">
+              <img src="images/icon-phone.svg" alt="phone icon">
+              <div>Phone: +1-543-123-4567</div>
+            </div>
+            <div id="fylo-email">
+              <img src="images/icon-email.svg" alt="email icon">
+              <div>example@fylo.com</div>
+            </div>
+          </div>
+
         </div>
-        <div id="fylo-email">
-          <img src="images/icon-email.svg" alt="email icon">
-          <div>example@fylo.com</div>
+        <div id="tabs">
+          <ul>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
         </div>
-      </div>
-      <div id="tabs">
-        <ul>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Jobs</a></li>
-          <li><a href="#">Press</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </div>
-  
-      <div id="social">
+    
         <div id="links">
           <ul>
             <li><a href="#">Contact Us</a></li>
@@ -129,12 +141,14 @@
             <li><a href="#">Privacy</a></li>
           </ul>
         </div>
-        <div id="apps">
-          <div class="app"><a href="#" class="fa fa-facebook"></a></div>
-          <div class="app"><a href="#" class="fa fa-twitter"></a></div>
-          <div class="app"><a href="#" class="fa fa-instagram"></a></div>
+        <div id="social">
+          <div id="apps">
+            <div class="app"><a href="#" class="fa fa-facebook"></a></div>
+            <div class="app"><a href="#" class="fa fa-twitter"></a></div>
+            <div class="app"><a href="#" class="fa fa-instagram"></a></div>
+          </div>
         </div>
-      </div>
+      
     </div>
   </main>
 </section>
