@@ -377,37 +377,22 @@ section {
 }
 #footer{
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
   padding: 100px;
-}
-#footer-logo img{
-  width: 50%;
-  margin-bottom: 30px;
-  /* color: white; */
 }
 #contact{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 0px;
+  gap: 20px;
   margin-bottom: 0px;
 }
-#contact img{
-  width: 20px;
-  height: 20px;
-}
-#fylo-phone, #fylo-email{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-weight: lighter;
-}
+
 #footer-logo .log{
   width: 100%;
-  color: aliceblue;
-  
 }
 #social{
   margin-top: 0px;
@@ -415,8 +400,9 @@ section {
 #apps {
   margin-top: 0px;
 }
-#apps a{
-  color: aliceblue;
-
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 }
